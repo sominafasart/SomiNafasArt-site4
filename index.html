@@ -9,7 +9,7 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       color: #fff;
-      background: url('1000049963.png') no-repeat center center fixed;
+      background: url('https://gateway.toncdn.org/ipfs/QmRAQRcPLcC1nhzNU2QuPyE8vQUVik2RxKrE3uXrhfKRc6') no-repeat center center fixed;
       background-size: cover;
     }
 
@@ -32,6 +32,40 @@
       font-size: 1.1rem;
       line-height: 1.8;
       text-align: justify;
+    }
+
+    .collection-tabs {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .collection-tabs button {
+      background-color: #222;
+      color: #00ffff;
+      border: 1px solid #00ffff;
+      padding: 0.5rem 1.5rem;
+      margin: 0.5rem;
+      cursor: pointer;
+      border-radius: 20px;
+      font-size: 1rem;
+    }
+
+    .collection-tabs button:hover {
+      background-color: #00ffff;
+      color: #000;
+    }
+
+    .collection-grid {
+      display: none;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .collection-grid a img {
+      width: 100%;
+      border: 2px solid #fff;
+      border-radius: 10px;
     }
 
     .gallery {
@@ -87,7 +121,8 @@
 
     .links a {
       color: #00ffff;
-      margin: 0 1rem;
+      margin: 0.5rem;
+      display: block;
       text-decoration: none;
       font-size: 1.1rem;
     }
@@ -111,8 +146,8 @@
 
     <div class="intro">
       <p>
-        Welcome to the **Somi | NafasArt** official NFT gallery – a curated collection of emotionally profound, pixel-by-pixel original digital artworks.  
-        Each piece is **100% unique**, with no repetition. Whenever an artwork is sold on one platform, it will be removed from all others to protect its exclusivity.  
+        Welcome to the <strong>Somi | NafasArt</strong> official NFT gallery – a curated collection of emotionally profound, pixel-by-pixel original digital artworks.  
+        Each piece is <strong>100% unique</strong>, with no repetition. Whenever an artwork is sold on one platform, it will be removed from all others to protect its exclusivity.  
         We are committed to authenticity, originality, and artistic integrity.
       </p>
     </div>
@@ -122,35 +157,65 @@
       Your browser does not support the audio element.
     </audio>
 
+    <div class="collection-tabs">
+      <button onclick="showCollection('eternal')">Eternal Visions</button>
+      <button onclick="showCollection('human')">Human Echoes</button>
+    </div>
+
+    <!-- Eternal Visions Collection -->
+    <div id="eternal" class="collection-grid" style="display:grid;">
+      <a href="https://getgems.io/..."><img src="https://gateway.toncdn.org/ipfs/QmZq6KF8iFfDNDF3q9dJ28X9h5bq9tCczRo2azotvUNvUN" alt="Whispers of Silent Elegance" /></a>
+      <a href="https://getgems.io/..."><img src="https://gateway.toncdn.org/ipfs/QmbTD38HZyzW7X4kHoFqX2vUgtrfzqgMX2YPL98U5T93Eq" alt="The Silence of Dawn" /></a>
+      <a href="https://getgems.io/..."><img src="https://gateway.toncdn.org/ipfs/QmRAQRcPLcC1nhzNU2QuPyE8vQUVik2RxKrE3uXrhfKRc6" alt="Echoes of Light" /></a>
+      <a href="https://getgems.io/..."><img src="https://gateway.toncdn.org/ipfs/QmRAQRcPLcC1nhzNU2QuPyE8vQUVik2RxKrE3uXrhfKRc6" alt="Divine Glance (VIP)" /></a>
+    </div>
+
+    <!-- Human Echoes Collection -->
+    <div id="human" class="collection-grid">
+      <a href="https://getgems.io/..."><img src="https://gateway.toncdn.org/ipfs/QmbTD38HZyzW7X4kHoFqX2vUgtrfzqgMX2YPL98U5T93Eq" alt="The Quiet Before Collapse" /></a>
+      <a href="https://getgems.io/..."><img src="https://gateway.toncdn.org/ipfs/QmZq6KF8iFfDNDF3q9dJ28X9h5bq9tCczRo2azotvUNvUN" alt="Silent Weight of Sorrow" /></a>
+      <!-- Add more as needed -->
+    </div>
+
     <div class="gallery">
-      <img src="https://gateway.toncdn.org/ipfs/QmZq6KF8iFfDNDF3q9dJ28X9h5bq9tCczRo2azotvUNvUN" alt="NFT 1" />
-      <img src="https://gateway.toncdn.org/ipfs/QmbTD38HZyzW7X4kHoFqX2vUgtrfzqgMX2YPL98U5T93Eq" alt="NFT 2" />
-      <img src="https://gateway.toncdn.org/ipfs/QmRAQRcPLcC1nhzNU2QuPyE8vQUVik2RxKrE3uXrhfKRc6" alt="NFT 3" />
+      <img src="https://gateway.toncdn.org/ipfs/QmRAQRcPLcC1nhzNU2QuPyE8vQUVik2RxKrE3uXrhfKRc6" alt="Gallery Sample 1"/>
+      <img src="https://gateway.toncdn.org/ipfs/QmbTD38HZyzW7X4kHoFqX2vUgtrfzqgMX2YPL98U5T93Eq" alt="Gallery Sample 2"/>
+      <img src="https://gateway.toncdn.org/ipfs/QmZq6KF8iFfDNDF3q9dJ28X9h5bq9tCczRo2azotvUNvUN" alt="Gallery Sample 3"/>
     </div>
 
     <div class="roadmap">
       <h2>Roadmap</h2>
       <ul>
-        <li>Phase 1: Design of “Somi | NafasArt” collection with unique human-style pieces.</li>
-        <li>Phase 2: Minting on OpenSea (Ethereum) for broader global access and easy purchasing.</li>
-        <li>Phase 3: When one NFT is sold, it’s deleted from all other platforms. Guaranteed uniqueness.</li>
-        <li>Phase 4: Expansion of this emotional & exclusive visual style.</li>
-        <li>Phase 5: Creation of new collections in popular NFT styles.</li>
-        <li>Phase 6: All prices negotiable with serious collectors — respectful of budgets.</li>
-        <li>Phase 7: Strong marketing campaigns across Discord, Twitter & Telegram.</li>
-        <li>Phase 8: Future plans include limited physical art drops and tokenized access.</li>
+        <li>Design of “Somi | NafasArt” collection with unique human-style pieces.</li>
+        <li>Minting on OpenSea and GetGems.</li>
+        <li>Each NFT is exclusive — removed after one sale.</li>
+        <li>Expansion of the emotional visual style.</li>
+        <li>Creation of new top-tier collections.</li>
+        <li>Price negotiation available for collectors.</li>
+        <li>Marketing on Discord, Twitter & Telegram.</li>
+        <li>Future plans: physical art + token access.</li>
       </ul>
     </div>
 
     <div class="links">
-      🔗 <a href="https://getgems.io/user/EQDzGqbRXhyL7_KrU8HXlvdewN_82GvyqfIVBFlleVOOtNZo" target="_blank">TON Marketplace (GetGems)</a>  
-      🔗 <a href="https://opensea.io/0xe7f9f6edd5f5f1a5cdbbca1bdadadf912dd8d68d" target="_blank">Ethereum Marketplace (OpenSea)</a>  
-      🔗 <a href="https://t.me/SomiNafasArt" target="_blank">@SomiNafasArt (Telegram)</a>
+      🔗 <a href="https://getgems.io/collection/EQBAOEZp7qWg1GT6oFoR1D8d_Iccrl4QQitSbVw3ir5pXBuy">Collection Somi | Eternal Visions</a>
+      🔗 <a href="https://getgems.io/collection/EQCxacc1JoKWlDEWiLSE5kwcW0w3NV0LS7q8_Y-tmYsTDNlg">Collection Somi | Human Echoes</a>
+      🔗 <a href="https://getgems.io/user/EQDzGqbRXhyL7_KrU8HXlvdewN_82GvyqfIVBFlleVOOtNZo">Somi | NafasArt (brand)</a>
+      🔗 <a href="https://getgems.io/nft/EQCS8ayI5hiASFyp1gqzYm5F_-5o4VLW3RzrM0wdKCyCp84H">Single NFT – Whispers of Light</a>
+      🔗 Telegram: <a href="https://t.me/SomiNafasArt">@SomiNafasArt</a>
     </div>
 
     <div class="footer">
       © 2025 Somi | NafasArt. All rights reserved.
     </div>
   </div>
+
+  <script>
+    function showCollection(id) {
+      document.querySelectorAll('.collection-grid').forEach(e => e.style.display = 'none');
+      document.getElementById(id).style.display = 'grid';
+    }
+  </script>
 </body>
-</html>
+  </html>
+  
